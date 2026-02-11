@@ -3,45 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vehicle Showcase</title>
+    <title>Vehicle World</title>
+
     <style>
-        .vehicle-card {
-            max-width: 600px;
-            margin: 20px auto;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            font-family: sans-serif;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
         }
-        .vehicle-image, .vehicle-video {
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .vehicle-gallery img {
+            width: 220px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .vehicle-gallery {
+            text-align: center;
+        }
+
+        iframe {
             width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 15px;
+            max-width: 700px;
+            height: 400px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: none;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="vehicle-card">
-        <h2>Modern Electric SUV</h2>
-        
-        <!-- Image Section -->
-        <p><strong>Vehicle Photo:</strong></p>
-        <img src="https://images.pexels.com" 
-             alt="Modern Car" class="vehicle-image">
+    <!-- Header -->
+    <header>
+        <h1>Vehicle World</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#types">Vehicle Types</a>
+            <a href="#video">Video</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <!-- Video Section -->
-        <p><strong>Working Video:</strong></p>
-        <video class="vehicle-video" controls poster="https://via.placeholder.com">
-            <!-- Ensure your video format is MP4, WebM, or Ogg -->
-            <source src="https://www.w3schools.com" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        
-        <p>This section demonstrates how to use the <code>&lt;video&gt;</code> tag with controls for playback.</p>
-    </div>
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Vehicle World</h2>
+        <p>
+            Vehicle World is a simple website that showcases different types of vehicles
+            used for transportation. Vehicles help people travel faster, carry goods,
+            and connect the world.
+        </p>
+    </section>
+
+    <!-- Vehicle Types -->
+    <section id="types">
+        <h2>Types of Vehicles</h2>
+
+        <div class="vehicle-gallery">
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Car">
+            <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60" alt="Motorcycle">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Truck">
+            <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="Bus">
+        </div>
+    </section>
+
+    <!-- Video Section (FIXED) -->
+    <section id="video">
+        <h2>Vehicles in Motion</h2>
+
+        <iframe
+            src="https://www.youtube.com/embed/Gx9bUlWqL1E"
+            title="Vehicle Showcase Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Email: vehicles@example.com <br>
+            Phone: +254 700 000 000
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Vehicle World. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
