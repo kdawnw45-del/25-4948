@@ -2,55 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vehicles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Showcase</title>
+    <style>
+        .vehicle-card {
+            max-width: 600px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: sans-serif;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .vehicle-image, .vehicle-video {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#">Home</a> |
-        <a href="#">Types of Vehicles</a> |
-        <a href="#">Contact</a>
-    </nav>
+    <div class="vehicle-card">
+        <h2>Modern Electric SUV</h2>
+        
+        <!-- Image Section -->
+        <p><strong>Vehicle Photo:</strong></p>
+        <img src="https://images.pexels.com" 
+             alt="Modern Car" class="vehicle-image">
 
-    <hr>
-
-    <!-- Main Heading -->
-    <h1>Vehicles</h1>
-    <p>
-        Vehicles are machines designed to transport people or goods from one place to another.
-        They play an important role in daily life, business, and travel.
-    </p>
-
-    <!-- Images Section -->
-    <h2>Types of Vehicles</h2>
-
-    <img src="https://images.unsplash.com/photo-1549924231-f129b911e442"
-         alt="Car" width="250">
-
-    <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60"
-         alt="Motorcycle" width="250">
-
-    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
-         alt="Truck" width="250">
-
-    <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df"
-         alt="Bus" width="250">
-
-    <!-- Videos Section -->
-    <h2>Vehicles in Motion</h2>
-
-    <video width="320" controls>
-        <source src="https://player.vimeo.com/external/370467553.sd.mp4" type="video/mp4">
-    </video>
-
-    <video width="320" controls>
-        <source src="https://player.vimeo.com/external/517090081.sd.mp4" type="video/mp4">
-    </video>
-
-    <!-- Footer -->
-    <hr>
-    <p>© 2026 Vehicles World. All rights reserved.</p>
+        <!-- Video Section -->
+        <p><strong>Working Video:</strong></p>
+        <video class="vehicle-video" controls poster="https://via.placeholder.com">
+            <!-- Ensure your video format is MP4, WebM, or Ogg -->
+            <source src="https://www.w3schools.com" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <p>This section demonstrates how to use the <code>&lt;video&gt;</code> tag with controls for playback.</p>
+    </div>
 
 </body>
 </html>
